@@ -1,24 +1,15 @@
-let title = document.querySelector('.title')
-let price = document.querySelector('.price')
-let pages = document.querySelector('.pages')
-let author = document.querySelector('.author')
-const button = document.querySelector('.btn') 
+const carts = document.querySelectorAll('.cart');
 
-
-let cart = {
-    title: 'Книга',
-    price: 100,
-    pages: 312,
-    author: 'Ларри кинг'
-}
-
-button.addEventListener('click', ()=>{
-    setTimeout(() => {
-        title.textContent = cart.title
-        price.textContent = cart.price
-        pages.textContent = cart.pages
-        author.textContent = cart.author 
-  }, 3500);
-})
+carts.forEach(cart => {
+    cart.addEventListener('click', () => {
+        const hiddenBlock = cart.querySelector('.hidden-block');
+        
+        if (hiddenBlock.style.display === 'flex') {
+            hiddenBlock.style.display = 'none';
+        } else {
+            hiddenBlock.style.display = 'flex';
+        }
+    });
+});
 
 
