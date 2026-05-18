@@ -1,1 +1,61 @@
-let thing = 'яблоко'
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    padding: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #07080e;
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+}
+
+.cart{
+    padding: 50px;
+    background-color: #111322;;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    box-shadow: 0px 0px 20px rgb(73, 128, 255);
+    overflow: hidden;
+}
+
+.code-container{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.code-block{
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    border-left: 4px solid white;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.hidden-block{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .wrapper{
+        padding: 30px;
+    }
+}
