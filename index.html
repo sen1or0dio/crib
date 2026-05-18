@@ -4,20 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="epshtein.js" defer></script>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="cart">
+            <h2>Селекторы, комбинаторы и атрибутные селекторы</h2>
+        
+            <div class="code-container hidden-block">
+        
+                <!-- БАЗОВЫЕ СЕЛЕКТОРЫ -->
+                <div class="code-block">tag</div>
+                <div class="code-block">.class</div>
+                <div class="code-block">#id</div>
+                <div class="code-block">*</div>
+        
+                <!-- КОМБИНАТОРЫ -->
+                <div class="code-block">div p (descendant)</div>
+                <div class="code-block">div &gt; p (child)</div>
+                <div class="code-block">div + p (adjacent sibling)</div>
+                <div class="code-block">div ~ p (general sibling)</div>
+        
+                <!-- АТРИБУТНЫЕ СЕЛЕКТОРЫ -->
+                <div class="code-block">[attr]</div>
+                <div class="code-block">[attr="value"]</div>
+                <div class="code-block">[attr^="start"]</div>
+                <div class="code-block">[attr$="end"]</div>
+                <div class="code-block">[attr*="contains"]</div>
+        
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Псевдоклассы и псевдоэлементы</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">:hover</div>
+                <div class="code-block">:focus</div>
+                <div class="code-block">:active</div>
+                <div class="code-block">:nth-child()</div>
+                <div class="code-block">::before</div>
+                <div class="code-block">::after</div>
+                <div class="code-block">::placeholder</div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Типографика</h2>
+            
+            <div class="code-container hidden-block">
+                <div class="code-block">font-size</div>
+                <div class="code-block">font-family</div>
+                <div class="code-block">font-weight</div>
+                <div class="code-block">line-height</div>
+                <div class="code-block">letter-spacing</div>
+                <div class="code-block">text-align</div>
+            </div>
+        </div>
+        
+        
+        <div class="cart">
+            <h2>Цвета и Фон</h2>
+            
+            <div class="code-container hidden-block">
+                <div class="code-block">color</div>
+                <div class="code-block">background-img</div>
+                <div class="code-block">background-color</div>
+                <div class="code-block">gradients</div>
+            </div>
+        </div>
+        
+        <div class="cart">
+            <h2>Box Model</h2>
+            
+            <div class="code-container hidden-block">
+                <div class="code-block">width</div>
+                <div class="code-block">height</div>
+                <div class="code-block">padding</div>
+                <div class="code-block">padding-inline / padding-block</div>
+                <div class="code-block">margin</div>
+                <div class="code-block">margin-inline / margin-block</div>
+                <div class="code-block">border</div>
+                <div class="code-block">box-sizing</div>
+                <div class="code-block">overflow</div>
+            </div>
+        </div>
+        
+        <div class="cart">
+            <h2>Единицы измерения</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">px</div>
+                <div class="code-block">%</div>
+                <div class="code-block">em</div>
+                <div class="code-block">rem</div>
+                <div class="code-block">vw / vh</div>
+                <div class="code-block">clamp()</div>
+                <div class="code-block">calc()</div>
+            </div>
+        </div>
+  
+        <div class="cart">
+            <h2>Position</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">static</div>
+                <div class="code-block">relative</div>
+                <div class="code-block">absolute</div>
+                <div class="code-block">fixed</div>
+                <div class="code-block">sticky</div>
+                <div class="code-block">z-index</div>
+            </div>
+        </div>
+    
+        <div class="cart">
+            <h2>Display</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">block</div>
+                <div class="code-block">inline</div>
+                <div class="code-block">inline-block</div>
+                <div class="code-block">none</div>
+                <div class="code-block">overflow</div>
+            </div>
+        </div>
     
 
-    <button class="btn">Показать карточки товаров</button>
+        <div class="cart">
+            <h2>Flexbox</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">display: flex</div>
+                <div class="code-block">justify-content</div>
+                <div class="code-block">align-items</div>
+                <div class="code-block">flex-direction</div>
+                <div class="code-block">gap</div>
+                <div class="code-block">flex-wrap</div>
+            </div>
+        </div>
+    
+        <div class="cart">
+            <h2>CSS Grid</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">display: grid</div>
+                <div class="code-block">grid-template-columns</div>
+                <div class="code-block">grid-template-rows</div>
+                <div class="code-block">gap</div>
+                <div class="code-block">fr unit</div>
+                <div class="code-block">grid-area</div>
+            </div>
+        </div>
+   
+        <div class="cart">
+            <h2>Responsive Design</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">@media</div>
+                <div class="code-block">mobile first</div>
+                <div class="code-block">breakpoints</div>
+                <div class="code-block">responsive layout</div>
+                <div class="code-block">container queries</div>
+            </div>
+        </div>
+    
+        <div class="cart">
+            <h2>Transform</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">translate()</div>
+                <div class="code-block">scale()</div>
+                <div class="code-block">rotate()</div>
+                <div class="code-block">skew()</div>
+            </div>
+        </div>
+  
+        <div class="cart">
+            <h2>Transition</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">transition</div>
+                <div class="code-block">duration</div>
+                <div class="code-block">delay</div>
+                <div class="code-block">timing-function</div>
+            </div>
+        </div>
 
-    <div class="cart">
-        <h1 class="title"></h1>
-        <p class="price"></p>
-        <p class="pages"></p>
-        <p class="author"></p>
+        <div class="cart">
+            <h2>Animation</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">@keyframes</div>
+                <div class="code-block">animation-name</div>
+                <div class="code-block">animation-duration</div>
+                <div class="code-block">iteration-count</div>
+            </div>
+        </div>
+   
+        <div class="cart">
+            <h2>CSS Variables</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">:root</div>
+                <div class="code-block">--variable</div>
+                <div class="code-block">var()</div>
+                <div class="code-block">themes</div>
+            </div>
+        </div>
+    
+
+        <div class="cart">
+            <h2>Effects</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">box-shadow</div>
+                <div class="code-block">text-shadow</div>
+                <div class="code-block">filter</div>
+                <div class="code-block">backdrop-filter</div>
+                <div class="code-block">opacity</div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Modern CSS</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">nesting</div>
+                <div class="code-block">@layer</div>
+                <div class="code-block">clamp()</div>
+                <div class="code-block">min() / max()</div>
+                <div class="code-block">logical properties</div>
+            </div>
+        </div>
+  
+        <div class="cart">
+            <h2>CSS Architecture</h2>
+    
+            <div class="code-container hidden-block">
+                <div class="code-block">BEM</div>
+                <div class="code-block">SCSS</div>
+                <div class="code-block">Tailwind</div>
+                <div class="code-block">CSS Modules</div>
+                <div class="code-block">Design Systems</div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Forms</h2>
+        
+            <div class="code-container hidden-block">
+                <div class="code-block">input</div>
+                <div class="code-block">button</div>
+                <div class="code-block">textarea</div>
+                <div class="code-block">select</div>
+                <div class="code-block">placeholder</div>
+                <div class="code-block">focus</div>
+                <div class="code-block">disabled</div>
+                <div class="code-block">checkbox</div>
+                <div class="code-block">radio</div>
+            </div>
+        </div>
+    
     </div>
-    
 </body>
 </html>
